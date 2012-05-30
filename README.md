@@ -32,6 +32,7 @@ Getting started
 ----------------
 **Read** the Ph.D. thesis of Matthias Machacek attached as [PDF](https://github.com/downloads/3dptv/3dptv_streaks/diss_Matthias_Machacek.pdf)
 
+Using this software you're kindly requested to cite the Ph.D. thesis of Matthias Machacek. 
 
 Calibration:
 -----------
