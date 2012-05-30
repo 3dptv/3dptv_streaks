@@ -30,7 +30,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Getting started
 ----------------
-**Read** the Ph.D. thesis of Matthias Machacek attached as [PDF](https://github.com/3dptv/3dptv_streaks/diss_MatthiasMachacek.pdf)
+**Read** the Ph.D. thesis of Matthias Machacek attached as [PDF](https://github.com/downloads/3dptv/3dptv_streaks/diss_Matthias_Machacek.pdf)
 
 
 Calibration:
