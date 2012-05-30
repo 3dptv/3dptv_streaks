@@ -1,0 +1,369 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\pulnix_ni.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\pulnix_ni.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About pulnix_ni"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "pulnix_ni Version 2.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2001",IDC_STATIC,39,20,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Matthias Machacek IFD/ETHZ",IDC_STATIC,39,35,133,13
+END
+
+IDD_PULNIX_NI_DIALOG DIALOGEX 0, 0, 660, 423
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "pulnix_ni"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Ring",IDC_RING,599,65,52,14
+    PUSHBUTTON      "Sequence",IDC_SEQUENCE,599,47,52,14
+    PUSHBUTTON      "One Shot",IDC_ONE_SHOT,600,29,52,14
+    PUSHBUTTON      "Stop",IDC_STOP,599,83,52,14
+    EDITTEXT        IDC_THRESH_VALUE,579,286,28,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    WS_TABSTOP,607,286,14,13
+    DEFPUSHBUTTON   "EXIT",IDOK,559,83,32,14
+    EDITTEXT        IDC_FRAME_RATE,463,239,77,28,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Frame Rate",IDC_STATIC_FRAME_RATE,462,226,38,8
+    EDITTEXT        IDC_SET_FRAME_RATE,507,29,31,13
+    LTEXT           "Frame Rate",IDC_STATIC_SET_FRAME_RATE,463,30,38,8
+    PUSHBUTTON      "Apply",IDC_FRAME_RATE_APPLY,463,69,22,13
+    EDITTEXT        IDC_NR_OF_BUFFERS,599,133,52,14,ES_AUTOHSCROLL
+    LTEXT           "Number of Buffers",IDC_STATIC_NUMBER_OF_BUFFERS,590,121,
+                    61,12
+    PUSHBUTTON      "Apply",IDC_NR_OF_BUFFERS_APPLY,564,133,22,14
+    PUSHBUTTON      "Save",IDC_SAVE_ONE_SHOT,561,245,27,14
+    EDITTEXT        IDC_NAME_ONE_SHOT,600,245,51,15,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    COMBOBOX        IDC_TRIGGER1_OUT,463,371,55,60,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Line OUT",IDC_STATIC_TRIGGER_LINE_OUT,463,358,59,12
+    COMBOBOX        IDC_TRIGGER1_SIGNAL_OUT,463,398,56,59,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Signal OUT",IDC_STATIC_TRIGGER_SIGNAL_OUT,463,387,44,10
+    GROUPBOX        "Camera ",IDC_STATIC_CAMERA_1,554,19,103,89
+    GROUPBOX        "Timer Board",IDC_STATIC_TIMER,455,19,90,133
+    GROUPBOX        "Status Window",IDC_STATIC_STATUS_WINDOW,455,159,91,113
+    EDITTEXT        IDC_STATUS,7,350,433,66,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    LTEXT           "Image Number",IDC_STATIC_NR_IMAGES,462,195,52,9
+    CONTROL         "Master",IDC_MASTER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,572,182,50,9
+    GROUPBOX        "Mode",IDC_STATIC_MODE,554,158,103,63
+    LTEXT           "File Name",IDC_STATIC_FILE_NAME,602,231,49,11
+    GROUPBOX        "Save Image",IDC_STATIC_FILE,554,224,103,47
+    CONTROL         "Two Cameras",IDC_TWO_CAMERAS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,572,169,57,9
+    GROUPBOX        "Image Proccessing",IDC_STATIC_IMG_PROC,454,276,203,59
+    CONTROL         "Subtract Ref",IDC_SUB_REF,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,463,287,66,11
+    CONTROL         "Integrate",IDC_INTEG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,463,314,44,13
+    CONTROL         "Thresh",IDC_THRESH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,535,288,44,11
+    GROUPBOX        "Output Signal 1",IDC_STATIC_OUT1,453,341,101,75
+    PUSHBUTTON      "Clear Int",IDC_CLEAR_INT,513,314,34,13
+    CONTROL         "Invert",IDC_INV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    463,301,39,12
+    PUSHBUTTON      "Save",IDC_SAVE_IMG_PROC,612,314,34,13
+    EDITTEXT        IDC_STATUS_NR_IMAGES,463,206,50,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_IMG_NR,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,513,205,11,15
+    LTEXT           "Additional trigger",IDC_STATIC_LASER_TRIG,463,102,52,10
+    EDITTEXT        IDC_LASER_TRIGGER,503,129,38,12,ES_AUTOHSCROLL
+    CONTROL         "ON",IDC_LASER_TRIG_ON,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | WS_GROUP,518,102,23,9
+    CONTROL         "OFF",IDC_LASER_TRIG_OFF,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT,517,114,24,9
+    LTEXT           "Delay[ms]",IDC_STATIC_DELAY,463,131,37,11
+    GROUPBOX        "Output Signal 2",IDC_STATIC_OUT2,559,341,101,75
+    COMBOBOX        IDC_TRIGGER2_OUT,568,371,55,60,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Line OUT",IDC_STATIC_TRIGGER_LINE_OUT2,568,358,59,12
+    COMBOBOX        IDC_TRIGGER2_SIGNAL_OUT,568,398,56,59,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Signal OUT",IDC_STATIC_TRIGGER_SIGNAL_OUT2,568,387,44,
+                    10
+    EDITTEXT        IDC_EXP_TIME_SET,507,48,31,13
+    LTEXT           "Exposure Time [ms]",IDC_STATIC_EXPOSURE_TIME,463,44,34,
+                    17
+    PUSHBUTTON      "MaxExp",IDC_MAX_EXP,507,69,31,13
+    GROUPBOX        "Memory",IDC_STATIC_MEMORY,555,114,103,40
+    CONTROL         "Asynchronous",IDC_ASYNC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,572,192,71,13
+    CONTROL         "On External Trigger",IDC_EXTERNAL_TRIGGER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,572,208,67,10
+    CONTROL         "ON",IDC_SIGNAL1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    523,356,26,13
+    CONTROL         "OFF",IDC_SIGNAL1_OFF,"Button",BS_AUTORADIOBUTTON,523,
+                    370,26,13
+    CONTROL         "ON",IDC_SIGNAL2,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    628,354,26,13
+    CONTROL         "OFF",IDC_SIGNAL2_OFF,"Button",BS_AUTORADIOBUTTON,628,
+                    367,26,13
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "pulnix_ni MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "pulnix_ni\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "pulnix_ni.EXE\0"
+            VALUE "ProductName", "pulnix_ni Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PULNIX_NI_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        VERTGUIDE, 189
+        VERTGUIDE, 463
+        VERTGUIDE, 596
+        VERTGUIDE, 601
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 416
+        HORZGUIDE, 19
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PULNIX_NI_DIALOG DLGINIT
+BEGIN
+    IDC_TRIGGER1_OUT, 0x403, 12, 0
+0x5254, 0x4749, 0x305f, 0x2020, 0x2020, 0x0020, 
+    IDC_TRIGGER1_OUT, 0x403, 7, 0
+0x5254, 0x4749, 0x315f, "\000" 
+    IDC_TRIGGER1_OUT, 0x403, 7, 0
+0x5254, 0x4749, 0x325f, "\000" 
+    IDC_TRIGGER1_OUT, 0x403, 7, 0
+0x5254, 0x4749, 0x335f, "\000" 
+    IDC_TRIGGER1_OUT, 0x403, 7, 0
+0x5452, 0x4953, 0x305f, "\000" 
+    IDC_TRIGGER1_OUT, 0x403, 7, 0
+0x5452, 0x4953, 0x315f, "\000" 
+    IDC_TRIGGER1_OUT, 0x403, 7, 0
+0x5452, 0x4953, 0x325f, "\000" 
+    IDC_TRIGGER1_OUT, 0x403, 7, 0
+0x5452, 0x4953, 0x335f, "\000" 
+    IDC_TRIGGER1_OUT, 0x403, 7, 0
+0x5452, 0x4953, 0x345f, "\000" 
+    IDC_TRIGGER1_OUT, 0x403, 7, 0
+0x5452, 0x4953, 0x355f, "\000" 
+    IDC_TRIGGER1_OUT, 0x403, 7, 0
+0x5452, 0x4953, 0x365f, "\000" 
+    IDC_TRIGGER1_SIGNAL_OUT, 0x403, 6, 0
+0x5356, 0x6e79, 0x0063, 
+    IDC_TRIGGER1_SIGNAL_OUT, 0x403, 6, 0
+0x5348, 0x6e79, 0x0063, 
+    IDC_TRIGGER1_SIGNAL_OUT, 0x403, 12, 0
+0x7246, 0x6d61, 0x2065, 0x7453, 0x7261, 0x0074, 
+    IDC_TRIGGER1_SIGNAL_OUT, 0x403, 12, 0
+0x7246, 0x6d61, 0x2065, 0x4420, 0x6e6f, 0x0065, 
+    IDC_TRIGGER2_OUT, 0x403, 12, 0
+0x5254, 0x4749, 0x305f, 0x2020, 0x2020, 0x0020, 
+    IDC_TRIGGER2_OUT, 0x403, 7, 0
+0x5254, 0x4749, 0x315f, "\000" 
+    IDC_TRIGGER2_OUT, 0x403, 7, 0
+0x5254, 0x4749, 0x325f, "\000" 
+    IDC_TRIGGER2_OUT, 0x403, 7, 0
+0x5254, 0x4749, 0x335f, "\000" 
+    IDC_TRIGGER2_OUT, 0x403, 7, 0
+0x5452, 0x4953, 0x305f, "\000" 
+    IDC_TRIGGER2_OUT, 0x403, 7, 0
+0x5452, 0x4953, 0x315f, "\000" 
+    IDC_TRIGGER2_OUT, 0x403, 7, 0
+0x5452, 0x4953, 0x325f, "\000" 
+    IDC_TRIGGER2_OUT, 0x403, 7, 0
+0x5452, 0x4953, 0x335f, "\000" 
+    IDC_TRIGGER2_OUT, 0x403, 7, 0
+0x5452, 0x4953, 0x345f, "\000" 
+    IDC_TRIGGER2_OUT, 0x403, 7, 0
+0x5452, 0x4953, 0x355f, "\000" 
+    IDC_TRIGGER2_OUT, 0x403, 7, 0
+0x5452, 0x4953, 0x365f, "\000" 
+    IDC_TRIGGER2_SIGNAL_OUT, 0x403, 6, 0
+0x5356, 0x6e79, 0x0063, 
+    IDC_TRIGGER2_SIGNAL_OUT, 0x403, 6, 0
+0x5348, 0x6e79, 0x0063, 
+    IDC_TRIGGER2_SIGNAL_OUT, 0x403, 12, 0
+0x7246, 0x6d61, 0x2065, 0x7453, 0x7261, 0x0074, 
+    IDC_TRIGGER2_SIGNAL_OUT, 0x403, 12, 0
+0x7246, 0x6d61, 0x2065, 0x4420, 0x6e6f, 0x0065, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About pulnix_ni..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\pulnix_ni.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

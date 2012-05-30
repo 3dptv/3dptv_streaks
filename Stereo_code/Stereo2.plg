@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Stereo2 - Win32 Debug_Office--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\machacek\LOCALS~1\Temp\RSP4BE.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "C:\Program Files\National Instruments\Ni-imaq\include" /I "C:\Program Files\IMSL\include" /I "C:\Program Files\Logical Vision\h" /I "C:\Program Files\Logical Vision\G\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Stereo2___Win32_Debug_Office/" /Fp"Stereo2___Win32_Debug_Office/Stereo2.pch" /Yu"stdafx.h" /Fo"Stereo2___Win32_Debug_Office/" /Fd"Stereo2___Win32_Debug_Office/" /FD /GZ /c 
+"C:\Users\machacek\PROGRAMS\Stereo2_9.3\Stereo2Dlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\machacek\LOCALS~1\Temp\RSP4BE.tmp" 
+<h3>Output Window</h3>
+Compiling...
+Stereo2Dlg.cpp
+C:\Users\machacek\PROGRAMS\Stereo2_9.3\Stereo2Dlg.cpp(2541) : warning C4101: 't_old' : unreferenced local variable
+C:\Users\machacek\PROGRAMS\Stereo2_9.3\Stereo2Dlg.cpp(2540) : warning C4101: 'R_test_new' : unreferenced local variable
+C:\Users\machacek\PROGRAMS\Stereo2_9.3\Stereo2Dlg.cpp(2542) : warning C4101: 't_new' : unreferenced local variable
+C:\Users\machacek\PROGRAMS\Stereo2_9.3\Stereo2Dlg.cpp(2539) : warning C4101: 'R_test_old' : unreferenced local variable
+
+
+
+<h3>Results</h3>
+Stereo2Dlg.obj - 0 error(s), 4 warning(s)
+</pre>
+</body>
+</html>

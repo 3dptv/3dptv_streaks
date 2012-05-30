@@ -1,0 +1,4 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by CamCal.rc
+//
+#define HIDC_STATIC_IMAGE_HEIGHT        0x80850474    // IDD_CCD_PAR_DIALOG

@@ -1,0 +1,455 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDHELP DIALOG DISCARDABLE  0, 0, 284, 42
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About CamCal"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,21,20
+    LTEXT           "CamCal Version 7.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2001  by Matthias Machacek IFD/ETHZ",
+                    IDC_STATIC,39,20,188,8
+    DEFPUSHBUTTON   "OK",IDOK,227,17,50,14,WS_GROUP
+END
+
+IDD_CAMCAL_DIALOG DIALOGEX 0, 0, 706, 431
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP | WS_EX_APPWINDOW
+CAPTION "Camera Calibration 2.0"
+MENU IDR_MENU1
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "EXIT",IDOK,629,412,70,13
+    PUSHBUTTON      "Calibrate",IDC_CAL_CAM,445,236,93,14
+    EDITTEXT        IDC_CAL_THRES,507,162,26,14,ES_AUTOHSCROLL
+    LTEXT           "Threshold level",IDC_STATIC_CAL_THRES,449,164,53,9
+    LTEXT           "X_0 [mm]",IDC_STATIC_X_0,563,21,30,8
+    LTEXT           "Y_0 [mm]",IDC_STATIC_Y_0,563,37,30,8
+    LTEXT           "Z_0 [mm]",IDC_STATIC_Z_0,563,53,30,8
+    LTEXT           "phi[rad]",IDC_STATIC_PHI,563,86,27,8
+    LTEXT           "kappa[rad]",IDC_STATIC_KAPPA,563,106,40,8
+    LTEXT           "omega[rad]",IDC_STATIC_OMEGA,563,69,38,8
+    LTEXT           "x_h [mm]",IDC_STATIC_XH,563,138,31,8
+    LTEXT           "y_h [mm]",IDC_STATIC_YH,563,154,29,8
+    LTEXT           "s_x",IDC_STATIC_S_X,563,170,14,8
+    LTEXT           "theta[rad]",IDC_STATIC_THETA,563,186,32,8
+    LTEXT           "k1",IDC_STATIC_K1,563,204,14,8
+    LTEXT           "k2",IDC_STATIC_K2,563,221,14,8
+    LTEXT           "p1",IDC_STATIC_P1,563,238,14,8
+    LTEXT           "p2",IDC_STATIC_P2,563,255,14,8
+    EDITTEXT        IDC_X_0,607,17,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y_0,607,34,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Z_0,607,50,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OMEGA,607,68,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHI,607,85,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KAPPA,607,102,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FOCUS,607,119,62,12,ES_AUTOHSCROLL
+    LTEXT           "focus [mm]",IDC_STATIC_FOCUS,563,122,34,8
+    EDITTEXT        IDC_X_H,607,135,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y_H,607,153,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_S_X,607,170,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_THETA,607,186,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_K1,607,204,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_K2,607,221,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_P1,607,238,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_P2,607,255,62,12,ES_AUTOHSCROLL
+    LTEXT           "RMS[mm]",IDC_STATIC_RMS,468,265,38,8
+    EDITTEXT        IDC_RMS,453,277,68,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_FILE_GLOBAL,579,391,120,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FILE_CAL_IMG,579,365,120,12,ES_AUTOHSCROLL
+    GROUPBOX        "Parameters",IDC_STATIC_PARAMETERS,546,7,153,287
+    EDITTEXT        IDC_STATUS,6,343,250,82,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_VSCROLL,WS_EX_LEFTSCROLLBAR
+    LTEXT           "Reference Point",IDC_STATIC_REF_POINT,449,145,54,8
+    EDITTEXT        IDC_REF_POINT,507,142,26,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_CTR_X0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,673,
+                    15,15,15
+    CONTROL         "",IDC_CTR_Y0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,673,
+                    31,15,15
+    CONTROL         "",IDC_CTR_Z0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,673,
+                    47,15,15
+    CONTROL         "",IDC_CTR_OMEGA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    673,68,15,15
+    CONTROL         "",IDC_CTR_PHI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,673,
+                    82,15,15
+    CONTROL         "",IDC_CTR_KAPPA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    673,100,15,15
+    CONTROL         "",IDC_CTR_FOCUS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    673,116,15,15
+    CONTROL         "",IDC_CTR_XH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,673,
+                    135,15,15
+    CONTROL         "",IDC_CTR_YH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,673,
+                    154,15,15
+    CONTROL         "",IDC_CTR_SX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,673,
+                    170,15,15
+    CONTROL         "",IDC_CTR_THETA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    673,186,15,15
+    CONTROL         "",IDC_CTR_K1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,673,
+                    204,15,15
+    CONTROL         "",IDC_CTR_K2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,673,
+                    220,15,15
+    CONTROL         "",IDC_CTR_P1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,673,
+                    236,15,15
+    CONTROL         "",IDC_CTR_P2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,673,
+                    252,15,15
+    GROUPBOX        "Histogram",IDC_STATIC_HISTO,259,339,177,86
+    GROUPBOX        "",IDC_STATIC_AC,445,255,93,39
+    PUSHBUTTON      "Plane 1",IDC_PLANE1,459,63,30,13
+    PUSHBUTTON      "Detect Points and Sort",IDC_DETECT,460,181,66,23,
+                    BS_MULTILINE
+    PUSHBUTTON      "New Set of Planes",IDC_NEW_SET,458,26,66,15
+    PUSHBUTTON      "Plane 2",IDC_PLANE2,459,76,30,13
+    PUSHBUTTON      "Plane 3",IDC_PLANE3,459,90,30,13
+    PUSHBUTTON      "Plane 4",IDC_PLANE4,459,105,30,13
+    PUSHBUTTON      "Plane 5",IDC_PLANE5,459,119,30,13
+    PUSHBUTTON      "Plane 6",IDC_PLANE6,494,63,30,13
+    PUSHBUTTON      "Plane 7",IDC_PLANE7,494,76,30,13
+    PUSHBUTTON      "Plane 8",IDC_PLANE8,494,90,30,13
+    PUSHBUTTON      "Plane 9",IDC_PLANE9,494,105,30,13
+    PUSHBUTTON      "Plane 10",IDC_PLANE10,494,119,30,13
+    GROUPBOX        "Built Data Set",IDC_STATIC_PLANES,445,7,93,207
+    PUSHBUTTON      "Plane 0",IDC_PLANE0,459,48,65,13
+    PUSHBUTTON      "Reset+Reread  Initial Parameters",IDC_RESET_PARA,564,
+                    277,120,11
+    PUSHBUTTON      "Open Calibration Image",IDC_OPEN_CAL_IMAGE,579,352,120,
+                    12
+    PUSHBUTTON      "Open File with Global Coordinates",IDC_OPEN_GLOBAL_FILE,
+                    579,378,120,12
+    PUSHBUTTON      "Calibrate Linear Model",IDC_LIN_CAL,445,218,93,14
+    PUSHBUTTON      "Set working directory",IDC_PATH,445,352,120,12
+    EDITTEXT        IDC_DIR_PATH,445,365,120,35,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "Get 3D",IDC_GET_3D,441,412,45,13
+    GROUPBOX        "Files",IDC_STATIC_FILES,440,339,259,70
+    PUSHBUTTON      "Get Look Up",IDC_GET_LOOK_UP,505,412,45,13
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,6,328,430,6
+END
+
+IDD_GET_3D_DIALOG DIALOG DISCARDABLE  0, 0, 855, 423
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Calculate Epipolar Lines and 3D Coordinates"
+MENU IDR_MENU2
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,752,402,96,14
+    PUSHBUTTON      "Detect points",IDC_DETECT_POINTS,21,382,60,16
+    PUSHBUTTON      "3D coord with  lin mod",IDC_GET_EPI_3D_LIN,143,373,60,
+                    28,BS_MULTILINE
+    LTEXT           "Threshold",IDC_STATIC_THRESHOLD,53,363,34,12
+    EDITTEXT        IDC_THRESHOLD,21,360,25,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "Show Images",IDC_SHOW_IMAGES,21,337,60,17
+    PUSHBUTTON      "3D coord with lens distortion",IDC_GET_EPI_3D,143,339,
+                    60,28,BS_MULTILINE
+    EDITTEXT        IDC_ZMIN,264,374,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ZMAX,264,390,37,14,ES_AUTOHSCROLL
+    LTEXT           "ZMIN",IDC_STATIC_ZMIN,227,378,28,11
+    LTEXT           "ZMAZ",IDC_STATIC_ZMAX,227,391,28,11
+    EDITTEXT        IDC_TOLERANCE,264,341,37,14,ES_AUTOHSCROLL
+    LTEXT           "Tolerance",IDC_STATIC_TOL,226,344,34,11
+    EDITTEXT        IDC_STATUS,455,330,216,86,ES_MULTILINE | WS_VSCROLL
+    PUSHBUTTON      "Open 3D Points Coord.",IDC_FILE_STEREO_POS,327,342,94,
+                    14
+    GROUPBOX        "Analyse",IDC_STATIC,321,327,108,89
+    PUSHBUTTON      "Get Accuracy",IDC_FILE_STEREO_ANALYSE,328,380,94,14
+    PUSHBUTTON      "Open Exp 3D Points ",IDC_FILE_STEREO_EXP_POS,327,361,94,
+                    14
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",
+                    PBS_VERTICAL | PBS_SMOOTH | WS_BORDER,438,337,6,70
+    CONTROL         "No depth limits ",IDC_LIMITS,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,225,360,77,8
+    GROUPBOX        "",IDC_STATIC,7,327,116,89
+    GROUPBOX        "",IDC_STATIC,130,327,186,90
+END
+
+IDD_CCD_PAR_DIALOG DIALOGEX 0, 0, 117, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CCD Parameters"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,60,114,50,14
+    LTEXT           "Image Height",IDC_STATIC_IMAGE_HEIGHT,7,21,50,11,0,0,
+                    HIDC_STATIC_IMAGE_HEIGHT
+    LTEXT           "Pixel Height[mm]",IDC_STATIC_PICEL_HEIGHT,7,54,56,11
+    LTEXT           "Image Width",IDC_STATIC_IMAGE_WIDTH,7,38,50,11
+    LTEXT           "Pixel Width [mm]",IDC_STATIC_PIXEL_WIDTH,7,70,56,11
+    EDITTEXT        IDC_IMAGE_HEIGHT,63,20,43,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IMAGE_WIDTH,63,36,43,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PIXEL_HEIGHT,63,52,43,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PIXEL_WIDTH,63,69,43,12,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CamCal MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CamCal\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CamCal.EXE\0"
+            VALUE "ProductName", "CamCal Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDHELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 35
+    END
+
+    IDD_CAMCAL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 699
+        VERTGUIDE, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 425
+    END
+
+    IDD_GET_3D_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 848
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 416
+    END
+
+    IDD_CCD_PAR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Save non-lin cam par",        ID_FILE_SAVENONLINCAMPAR
+        MENUITEM "Save linear cam par",         ID_FILE_SAVELINEARCAMPAR
+    END
+    POPUP "Img Processing Opt"
+    BEGIN
+        MENUITEM "Gauss filter",                IDD_GAUSS, CHECKED
+        MENUITEM "Row correction",              IDD_ROW_COR, CHECKED
+    END
+    POPUP "Blob detection opt"
+    BEGIN
+        MENUITEM "Minimal Pixel size",          IDD_MIN_SIZE
+        MENUITEM "Maximal pixel size",          IDD_MAX_SIZE
+    END
+    POPUP "CCD Parameters"
+    BEGIN
+        MENUITEM "Set",                         ID_CCDPARAMETERS_SET
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About ",                      ID_HELP_ABOUT
+    END
+END
+
+IDR_MENU2 MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Camera 1 Image",              ID_FILE_CAMERA1IMAGE
+        MENUITEM "Camera 2 Image",              ID_FILE_CAMERA2IMAGE
+        MENUITEM "Camera 1 Parameter",          ID_FILE_CAMERA1PARAMETER
+        MENUITEM "Camera 2 Parameter",          ID_FILE_CAMERA2PARAMETER
+        MENUITEM "Camera 1 Ref Image",          ID_FILE_CAMERA1REFIMAGE
+        MENUITEM "Camera 2 Ref Image",          ID_FILE_CAMERA2REFIMAGE
+    END
+    POPUP "CCD"
+    BEGIN
+        MENUITEM "CCD1 Parameter",              ID_CCD_CCD1PARAMETER
+        MENUITEM "CCD2 Parameter",              ID_CCD_CCD2PARAMETER
+    END
+    MENUITEM "Calculate",                   65535
+    POPUP "Image Processing"
+    BEGIN
+        MENUITEM "Subtract Ref Image",          ID_IMAGEPROCESSING_SUBTRACTREFIMAGE
+        , CHECKED
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About CamCal..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Switzerland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DES)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN_SWISS
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CamCal.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CamCal.ico"
+#endif    // German (Switzerland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\CamCal.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: pulnix_ni - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/pulnix_ni.res" /d "NDEBUG" /d "_AFXDLL" "C:\ShareRTV1\pulnix_ni2.0\pulnix_ni.rc"" 
+Creating temporary file "C:\TEMP\RSP23.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "C:\Program Files\National Instruments\Ni-imaq\include" /I "C:\Program Files\National Instruments\include" /I "C:\Program Files\Logical Vision/h" /I "C:\Program Files\Logical Vision/G/h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/pulnix_ni.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\ShareRTV1\pulnix_ni2.0\functions.cpp"
+"C:\ShareRTV1\pulnix_ni2.0\grabber.cpp"
+"C:\ShareRTV1\pulnix_ni2.0\pulnix_ni.cpp"
+"C:\ShareRTV1\pulnix_ni2.0\pulnix_niDlg.cpp"
+"C:\ShareRTV1\pulnix_ni2.0\serial_port.cpp"
+"C:\ShareRTV1\pulnix_ni2.0\timer.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP23.tmp" 
+Creating temporary file "C:\TEMP\RSP24.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "C:\Program Files\National Instruments\Ni-imaq\include" /I "C:\Program Files\National Instruments\include" /I "C:\Program Files\Logical Vision/h" /I "C:\Program Files\Logical Vision/G/h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/pulnix_ni.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\ShareRTV1\pulnix_ni2.0\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP24.tmp" 
+Creating temporary file "C:\TEMP\RSP25.tmp" with contents
+[
+imaq.lib nidaq32.lib wObj.lib wPoint.lib wFilter.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/pulnix_ni.pdb" /machine:I386 /out:"Release/pulnix_ni.exe" /libpath:"C:\Program Files\National Instruments\Ni-imaq\lib\Msvc" /libpath:"C:\Program Files\National Instruments\lib" /libpath:"C:\Program Files\Logical Vision/lib" 
+.\Release\functions.obj
+.\Release\grabber.obj
+.\Release\pulnix_ni.obj
+.\Release\pulnix_niDlg.obj
+.\Release\serial_port.obj
+.\Release\StdAfx.obj
+.\Release\timer.obj
+.\Release\pulnix_ni.res
+]
+Creating command line "link.exe @C:\TEMP\RSP25.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+functions.cpp
+grabber.cpp
+pulnix_ni.cpp
+pulnix_niDlg.cpp
+serial_port.cpp
+timer.cpp
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Release/pulnix_ni.bsc"  .\Release\StdAfx.sbr .\Release\functions.sbr .\Release\grabber.sbr .\Release\pulnix_ni.sbr .\Release\pulnix_niDlg.sbr .\Release\serial_port.sbr .\Release\timer.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+pulnix_ni.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

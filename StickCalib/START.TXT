@@ -1,0 +1,6 @@
+Starten des Programms:
+
+-Pfad von Matlab auf den Ordner Kalibrierung setzen.
+-Bilderdaten in Format bmp abspeichern.
+
+-startcal eingeben in das Command Window von Matlab.

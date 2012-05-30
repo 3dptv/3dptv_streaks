@@ -1,0 +1,101 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CamCal - Win32 Release_Alexandros--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x807 /fo"CamCal___Win32_Release_Alexandros/CamCal.res" /d "NDEBUG" /d "_AFXDLL" "C:\Users\machacek\PROGRAMS\CamCal7\CamCal.rc"" 
+Creating temporary file "C:\DOCUME~1\machacek\LOCALS~1\Temp\RSP472.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "C:\Program Files\National Instruments\NI-IMAQ\include" /I "C:\Program Files\IMSL\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"CamCal___Win32_Release_Alexandros/" /Fp"CamCal___Win32_Release_Alexandros/CamCal.pch" /Yu"stdafx.h" /Fo"CamCal___Win32_Release_Alexandros/" /Fd"CamCal___Win32_Release_Alexandros/" /FD /c 
+"C:\Users\machacek\PROGRAMS\CamCal7\cal_3d.cpp"
+"C:\Users\machacek\PROGRAMS\CamCal7\calibration.cpp"
+"C:\Users\machacek\PROGRAMS\CamCal7\CamCal.cpp"
+"C:\Users\machacek\PROGRAMS\CamCal7\CamCalDlg.cpp"
+"C:\Users\machacek\PROGRAMS\CamCal7\ccd_parDlg.cpp"
+"C:\Users\machacek\PROGRAMS\CamCal7\dist_look_up.cpp"
+"C:\Users\machacek\PROGRAMS\CamCal7\Get_3D_DialogDlg.cpp"
+"C:\Users\machacek\PROGRAMS\CamCal7\img_proc.cpp"
+"C:\Users\machacek\PROGRAMS\CamCal7\io_functions.cpp"
+"C:\Users\machacek\PROGRAMS\CamCal7\lin_calibration.cpp"
+"C:\Users\machacek\PROGRAMS\CamCal7\matrix_op.cpp"
+"C:\Users\machacek\PROGRAMS\CamCal7\plot_functions.cpp"
+"C:\Users\machacek\PROGRAMS\CamCal7\vrml_generator.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\machacek\LOCALS~1\Temp\RSP472.tmp" 
+Creating temporary file "C:\DOCUME~1\machacek\LOCALS~1\Temp\RSP473.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "C:\Program Files\National Instruments\NI-IMAQ\include" /I "C:\Program Files\IMSL\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"CamCal___Win32_Release_Alexandros/" /Fp"CamCal___Win32_Release_Alexandros/CamCal.pch" /Yc"stdafx.h" /Fo"CamCal___Win32_Release_Alexandros/" /Fd"CamCal___Win32_Release_Alexandros/" /FD /c 
+"C:\Users\machacek\PROGRAMS\CamCal7\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\machacek\LOCALS~1\Temp\RSP473.tmp" 
+Creating temporary file "C:\DOCUME~1\machacek\LOCALS~1\Temp\RSP474.tmp" with contents
+[
+imaq.lib cmath.lib /nologo /subsystem:windows /profile /debug /machine:I386 /out:"CamCal___Win32_Release_Alexandros/CamCal.exe" /libpath:"C:\Program Files\National Instruments\Ni-imaq\lib\Msvc" /libpath:"C:\Program Files\IMSL\lib" 
+.\CamCal___Win32_Release_Alexandros\cal_3d.obj
+.\CamCal___Win32_Release_Alexandros\calibration.obj
+.\CamCal___Win32_Release_Alexandros\CamCal.obj
+.\CamCal___Win32_Release_Alexandros\CamCalDlg.obj
+.\CamCal___Win32_Release_Alexandros\ccd_parDlg.obj
+.\CamCal___Win32_Release_Alexandros\dist_look_up.obj
+.\CamCal___Win32_Release_Alexandros\Get_3D_DialogDlg.obj
+.\CamCal___Win32_Release_Alexandros\img_proc.obj
+.\CamCal___Win32_Release_Alexandros\io_functions.obj
+.\CamCal___Win32_Release_Alexandros\lin_calibration.obj
+.\CamCal___Win32_Release_Alexandros\matrix_op.obj
+.\CamCal___Win32_Release_Alexandros\plot_functions.obj
+.\CamCal___Win32_Release_Alexandros\StdAfx.obj
+.\CamCal___Win32_Release_Alexandros\vrml_generator.obj
+.\CamCal___Win32_Release_Alexandros\CamCal.res
+]
+Creating command line "link.exe @C:\DOCUME~1\machacek\LOCALS~1\Temp\RSP474.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+cal_3d.cpp
+calibration.cpp
+CamCal.cpp
+CamCalDlg.cpp
+ccd_parDlg.cpp
+dist_look_up.cpp
+Get_3D_DialogDlg.cpp
+img_proc.cpp
+io_functions.cpp
+lin_calibration.cpp
+matrix_op.cpp
+plot_functions.cpp
+vrml_generator.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\machacek\LOCALS~1\Temp\RSP476.tmp" with contents
+[
+/nologo /o"CamCal___Win32_Release_Alexandros/CamCal.bsc" 
+.\CamCal___Win32_Release_Alexandros\StdAfx.sbr
+.\CamCal___Win32_Release_Alexandros\cal_3d.sbr
+.\CamCal___Win32_Release_Alexandros\calibration.sbr
+.\CamCal___Win32_Release_Alexandros\CamCal.sbr
+.\CamCal___Win32_Release_Alexandros\CamCalDlg.sbr
+.\CamCal___Win32_Release_Alexandros\ccd_parDlg.sbr
+.\CamCal___Win32_Release_Alexandros\dist_look_up.sbr
+.\CamCal___Win32_Release_Alexandros\Get_3D_DialogDlg.sbr
+.\CamCal___Win32_Release_Alexandros\img_proc.sbr
+.\CamCal___Win32_Release_Alexandros\io_functions.sbr
+.\CamCal___Win32_Release_Alexandros\lin_calibration.sbr
+.\CamCal___Win32_Release_Alexandros\matrix_op.sbr
+.\CamCal___Win32_Release_Alexandros\plot_functions.sbr
+.\CamCal___Win32_Release_Alexandros\vrml_generator.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\machacek\LOCALS~1\Temp\RSP476.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+CamCal.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

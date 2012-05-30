@@ -1,0 +1,4 @@
+This version uses the skeleton 
+to reconstruct the streak.
+The endpoints are found by pixel 
+neighbour search. 

@@ -1,0 +1,7 @@
+this program has the correct 
+accuracy calculation. Version 8.0 does NOT
+have it !
+-The codes generates the look-up table.
+-The code calculates the centroides with the
+normalized pixels.
+This version has the image conditioner

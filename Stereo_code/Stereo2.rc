@@ -1,0 +1,264 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Stereo2.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Stereo2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Stereo2"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Stereo2 Version 9.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) Matthias Machacek",IDC_STATIC,39,20,119,
+                    17
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "This Version has no calibration part \nThis Version uses MFC for file browsing \nThis Version uses Wit library for filtering\nThis version does not use streak as 5.0 does",
+                    IDC_STATIC,45,37,183,42
+END
+
+IDD_STEREO2_DIALOG DIALOGEX 0, 0, 747, 599
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Stereo2"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "EXIT",IDOK,687,7,54,12
+    PUSHBUTTON      "Run",IDC_RUN,621,7,54,12
+    EDITTEXT        IDC_FIRST_IMG,689,31,51,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_LAST_IMG,689,49,51,14,ES_AUTOHSCROLL
+    LTEXT           "Number of first Image",IDC_STATIC_FIRST,603,31,71,14
+    LTEXT           "Number of last Image",IDC_STATIC_LAST,603,49,69,14
+    EDITTEXT        IDC_STATUS,601,247,139,205,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_VSCROLL,WS_EX_LEFTSCROLLBAR
+    PUSHBUTTON      "VMRL",IDC_VMRL,617,199,113,14
+    GROUPBOX        "Post Processing",IDC_STATIC_POST_PROC,602,186,140,36
+    LTEXT           "File name for Camera Parameters",IDC_STATIC_FILE_CAM,
+                    627,458,104,8
+    EDITTEXT        IDC_FILE_CALIB,621,473,119,13,ES_AUTOHSCROLL
+    LTEXT           "File name of Tracking Pictures",IDC_STATIC_FILE_IMG,628,
+                    507,96,8
+    EDITTEXT        IDC_FILE_IMG,621,519,119,13,ES_AUTOHSCROLL
+    LTEXT           "File name of Reference Images",IDC_STATIC_FILE_REF_IMG2,
+                    626,552,99,8
+    EDITTEXT        IDC_FILE_REF_IMG1,621,565,119,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_THRES_PTV,689,68,29,14,ES_AUTOHSCROLL
+    LTEXT           "Threshold Cam 1",IDC_THRES,603,72,59,13
+    PUSHBUTTON      "Open",IDC_OPEN_IMG_FILE,592,520,24,11
+    PUSHBUTTON      "Open",IDC_OPEN_FILE_REF_IMG,592,566,24,11
+    PUSHBUTTON      "Open",IDC_OPEN_CAM_PAR,592,475,24,11
+    EDITTEXT        IDC_FILE_REF_IMG2,621,579,119,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Open",IDC_OPEN_FILE_REF_IMG2,591,580,24,11
+    EDITTEXT        IDC_FILE_IMG2,621,533,119,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Open",IDC_OPEN_IMG_FILE2,592,535,24,11
+    EDITTEXT        IDC_FILE_CALIB2,621,487,119,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Open",IDC_OPEN_CAM_PAR2,591,489,24,11
+    EDITTEXT        IDC_THRES_PTV2,689,90,29,14,ES_AUTOHSCROLL
+    LTEXT           "Threshold Cam 2",IDC_THRES2,603,91,59,13
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",
+                    PBS_VERTICAL | PBS_SMOOTH | WS_BORDER,579,7,6,585
+    GROUPBOX        "Analyze Sequence",IDC_STATIC_A,601,112,139,72
+    EDITTEXT        IDC_IMG_NR,681,123,40,15,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_IMG_NR_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,720,124,11,13
+    LTEXT           "Analyze Image #",IDC_STATIC_ANALYZE,610,127,65,13
+    LTEXT           "Set Threshold level",IDC_STATIC_T_A,609,148,66,12
+    EDITTEXT        IDC_THRESH_ANALYZE,681,146,40,15,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_THRESH_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,720,146,11,13
+    CONTROL         "View 1 ",IDC_ANALYZE_IMG1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,615,169,38,8
+    CONTROL         "View 2",IDC_ANALYZE_IMG2,"Button",BS_AUTORADIOBUTTON,
+                    679,169,38,8
+    PUSHBUTTON      "Change coordinates",IDC_CHG_COORD,603,226,80,14
+    PUSHBUTTON      "TEST",IDC_BUTTON_TEST,692,225,41,15
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Stereo2 MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Stereo2\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Stereo2.EXE\0"
+            VALUE "ProductName", "Stereo2 Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_STEREO2_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 740
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 592
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Stereo2..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Stereo2.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
